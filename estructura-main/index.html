@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árbol Binario de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Productos</h1>
+    <form id="product-form">
+        <label for="product-id">ID del Producto:</label><br><br>
+        <input type="number" id="product-id" required><br><br>
+        <label for="product-name">Nombre del Producto:</label><br><br>
+        <input type="text" id="product-name" required><br><br>
+        <button type="submit" class="agregar">Agregar Producto</button>
+    </form>
+    <button id="show-products">Mostrar Productos (Ordenados por ID)</button>
+    <button id="search-product">Buscar Producto</button>
+    <button id="min-product">Producto con Menor ID</button>
+    <button id="max-product">Producto con Mayor ID</button>
+    <button id="sorted-products">Productos Ordenados (Menor a Mayor)</button>
+    <ul id="product-list"></ul>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
